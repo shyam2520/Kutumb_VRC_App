@@ -1,6 +1,5 @@
-# Kutumb_VRC_App
 
-## Virtual Rural Clinic App
+## Virtual Rural Clinic 
 
 A Online Hospital for the people in rural areas 
 
