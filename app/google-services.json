@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "260917555898",
+    "firebase_url": "https://patientregistration-93bc8.firebaseio.com",
+    "project_id": "patientregistration-93bc8",
+    "storage_bucket": "patientregistration-93bc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:260917555898:android:22de44f1ce61e7e4934883",
+        "android_client_info": {
+          "package_name": "com.example.patientregistration_backup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "260917555898-s5t6h6e71n2clad88etrgaqqntss1943.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeTSgdKqKEW8epsauvkuzgGQsmHbXB2y4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "260917555898-s5t6h6e71n2clad88etrgaqqntss1943.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

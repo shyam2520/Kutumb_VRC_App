@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--        <RelativeLayout-->
+<!--            android:id="@+id/profileNameBar"-->
+<!--            android:layout_marginLeft="37dp"-->
+<!--            android:layout_marginRight="37dp"-->
+<!--            android:layout_marginTop="28dp"-->
+<!--            android:layout_marginBottom="30dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/HiText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginBottom="20dp"-->
+<!--                android:fontFamily="@font/rubik"-->
+<!--                android:text="Hi,"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="24dp"-->
+<!--                ></TextView>-->
+
+<!--            <TextView-->
+<!--                android:layout_below="@+id/HiText"-->
+<!--                android:id="@+id/profileName"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/rubik"-->
+<!--                android:text="#usename"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="24dp"></TextView>-->
+
+<!--        </RelativeLayout>-->
+
+        <GridLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:rowCount="9">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="303dp"
+                android:layout_height="89.12dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#BDC8D3"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+
+                    >
+
+                    <TextView
+                        android:layout_width="343dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="132dp"
+                        android:drawableRight="@drawable/ic_account_circle_40px"
+                        android:fontFamily="@font/rubik"
+                        android:text="Complete Your Profile"
+                        android:textColor="#000000"
+                        android:textSize="26dp"></TextView>
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/HealthTip"
+                android:clickable="true"
+                android:layout_width="303dp"
+                android:layout_height="89.12dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#0000C7"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+                    <TextView
+                        android:id="@+id/TipOfDay"
+                        android:layout_width="101dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="132dp"
+                        android:fontFamily="@font/rubik"
+                        android:text="Tip of the day"
+                        android:textColor="#FBF5F5"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+                        <TextView
+                            android:layout_marginTop="3dp"
+                            android:layout_below="@id/TipOfDay"
+                            android:layout_width="132dp"
+                            android:layout_height="21dp"
+                            android:layout_marginBottom="36dp"
+                            android:text="health tip of the day"
+                            android:textSize="12dp"
+                            android:layout_marginLeft="13.1dp"
+                            android:textColor="#FBF5F5"></TextView>
+                        <ImageView
+                            android:layout_toRightOf="@id/TipOfDay"
+
+                            android:layout_width="38dp"
+                            android:layout_height="60dp"
+                            android:layout_row="0"
+                            android:layout_column="1"
+                            android:layout_marginLeft="68dp"
+                            android:src="@drawable/innovation"></ImageView>
+
+
+                    </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Appointment"
+                android:layout_width="303dp"
+                android:layout_height="89.12dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:id="@+id/Appointments"
+                        android:layout_width="101dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="132dp"
+                        android:fontFamily="@font/rubik"
+                        android:text="Appointments"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@id/Appointments"
+                        android:layout_width="132dp"
+                        android:layout_height="21dp"
+                        android:layout_marginBottom="36dp"
+                        android:text="Book an appointment"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="13.1dp"
+                        android:textColor="#262626"></TextView>
+                    <ImageView
+                        android:layout_toRightOf="@id/Appointments"
+                        android:layout_width="38dp"
+                        android:layout_height="60dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_marginLeft="68dp"
+                        android:src="@drawable/appointment"></ImageView>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="303dp"
+                android:layout_height="89.12dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:id="@+id/Chats"
+                        android:layout_width="101dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="132dp"
+                        android:fontFamily="@font/rubik"
+                        android:text="Chat Box"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@id/Chats"
+                        android:layout_width="145dp"
+                        android:layout_height="21dp"
+                        android:layout_marginBottom="36dp"
+                        android:text="Need Help? Chat with us"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="13.1dp"
+                        android:textColor="#262626"></TextView>
+                    <ImageView
+                        android:layout_toRightOf="@id/Chats"
+
+                        android:layout_width="38dp"
+                        android:layout_height="60dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_marginLeft="68dp"
+                        android:src="@drawable/chat_shantanu"></ImageView>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/VideoCalling"
+                android:layout_width="303dp"
+                android:layout_height="89.12dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                android:clickable="true"
+                app:cardElevation="6dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FADB39"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:id="@+id/VideoCall"
+                        android:layout_width="101dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="132dp"
+                        android:fontFamily="@font/rubik"
+                        android:text="Video Call"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@id/VideoCall"
+                        android:layout_width="132dp"
+                        android:layout_height="21dp"
+                        android:layout_marginBottom="36dp"
+                        android:text="Call a Specialist"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="13.1dp"
+                        android:textColor="#262626"></TextView>
+                    <ImageView
+                        android:layout_toRightOf="@id/VideoCall"
+
+                        android:layout_width="38dp"
+                        android:layout_height="60dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_marginLeft="68dp"
+                        android:src="@drawable/selfie"></ImageView>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+            android:layout_width="303dp"
+            android:layout_height="89.12dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="6dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#CF75FF"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/Prescriptions"
+                    android:layout_width="101dp"
+                    android:layout_height="19dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="132dp"
+                    android:fontFamily="@font/rubik"
+                    android:text="Prescriptions"
+                    android:textColor="#FBF5F5"
+                    android:textSize="16dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@id/Prescriptions"
+                    android:layout_width="160dp"
+                    android:layout_height="21dp"
+                    android:layout_marginBottom="36dp"
+                    android:text="Record your Prescriptions"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="13.1dp"
+                    android:textColor="#FBF5F5"></TextView>
+                <ImageView
+                    android:layout_toRightOf="@id/Prescriptions"
+                    android:layout_width="38dp"
+                    android:layout_height="60dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_marginLeft="68dp"
+                    android:src="@drawable/drug"></ImageView>
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+        android:layout_width="303dp"
+        android:layout_height="89.12dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000C7"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/Schedule"
+                android:layout_width="101dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="132dp"
+                android:fontFamily="@font/rubik"
+                android:text="Schedule"
+                android:textColor="#FBF5F5"
+                android:textSize="16dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginTop="3dp"
+                android:layout_below="@id/Schedule"
+                android:layout_width="200dp"
+                android:layout_height="21dp"
+                android:layout_marginBottom="36dp"
+                android:text="View Specialist Schedule Clinic wise  "
+                android:textSize="12dp"
+                android:layout_marginLeft="13.1dp"
+                android:textColor="#FBF5F5"></TextView>
+            <ImageView
+                android:layout_toRightOf="@id/Schedule"
+
+                android:layout_width="38dp"
+                android:layout_height="60dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginLeft="68dp"
+                android:src="@drawable/timeanddate"></ImageView>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="303dp"
+                android:layout_height="89.12dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FBF5F5"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:id="@+id/Labreports"
+                        android:layout_width="101dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="132dp"
+                        android:fontFamily="@font/rubik"
+                        android:text="Lab Reports"
+                        android:textColor="#262626"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@id/Labreports"
+                        android:layout_width="200dp"
+                        android:layout_height="21dp"
+                        android:layout_marginBottom="36dp"
+                        android:text="Real time update of lab reports"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="13.1dp"
+                        android:textColor="#262626"></TextView>
+                    <ImageView
+                        android:layout_toRightOf="@id/Labreports"
+
+                        android:layout_width="38dp"
+                        android:layout_height="60dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_marginLeft="68dp"
+                        android:src="@drawable/lab"></ImageView>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pay"
+                android:layout_width="303dp"
+                android:layout_height="89.12dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:clickable="true"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ED7071"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:id="@+id/Payements"
+                        android:layout_width="101dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="132dp"
+                        android:fontFamily="@font/rubik"
+                        android:text="Payements"
+                        android:textColor="#262626"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@id/Payements"
+                        android:layout_width="200dp"
+                        android:layout_height="21dp"
+                        android:layout_marginBottom="36dp"
+                        android:text="Your Payment History"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="13.1dp"
+                        android:textColor="#262626"></TextView>
+                    <ImageView
+                        android:layout_toRightOf="@id/Payements"
+
+                        android:layout_width="38dp"
+                        android:layout_height="60dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_marginLeft="68dp"
+                        android:src="@drawable/payment_icon"></ImageView>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="303dp"
+                android:layout_height="89.12dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#C4BEBE"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+                    <TextView
+                        android:id="@+id/Patienthistory"
+                        android:layout_width="101dp"
+                        android:layout_height="19dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="132dp"
+                        android:fontFamily="@font/rubik"
+                        android:text="History"
+                        android:textColor="#000000"
+                        android:textSize="16dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginTop="3dp"
+                        android:layout_below="@id/Patienthistory"
+                        android:layout_width="200dp"
+                        android:layout_height="21dp"
+                        android:layout_marginBottom="36dp"
+                        android:text="consultation details"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="13.1dp"
+                        android:textColor="#262626"></TextView>
+                    <ImageView
+                        android:layout_toRightOf="@id/Patienthistory"
+
+                        android:layout_width="38dp"
+                        android:layout_height="60dp"
+                        android:layout_row="0"
+                        android:layout_column="1"
+                        android:layout_marginLeft="68dp"
+                        android:src="@drawable/history"></ImageView>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

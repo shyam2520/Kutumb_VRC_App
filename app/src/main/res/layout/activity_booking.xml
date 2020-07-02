@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4212EF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+<LinearLayout
+    android:background="#4212EF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Booking">
+    <TextView
+        android:layout_marginTop="25dp"
+        android:id="@+id/myDate"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="23sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#FFF"
+        android:text="Select Your Date and Time"
+        android:fontFamily="@font/rubik"
+        />
+    <LinearLayout
+        android:background="@drawable/bg_calendar"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="28dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <CalendarView
+
+            android:id="@+id/CalendarView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></CalendarView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/firstLine"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/eigth_am"
+            android:textIsSelectable="true"
+            android:layout_marginLeft="60dp"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_calendar_button"
+            android:text="8:00"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"/>
+        <TextView
+            android:textIsSelectable="true"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/ten_am"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_calendar_button"
+            android:text="10:00"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"/>
+        <TextView
+            android:id="@+id/twelve_am"
+            android:textIsSelectable="true"
+            android:layout_marginLeft="30dp"
+            android:layout_width="80dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_calendar_button"
+            android:text="12:00"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"/>
+
+
+    </LinearLayout>
+        <LinearLayout
+
+            android:layout_below="@+id/firstLine"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/three_pm"
+                android:textIsSelectable="true"
+                android:layout_marginLeft="60dp"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_calendar_button"
+                android:text="15:00"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"/>
+            <TextView
+                android:id="@+id/five_pm"
+                android:textIsSelectable="true"
+                android:layout_marginLeft="30dp"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_calendar_button"
+                android:text="17:00"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"/>
+            <TextView
+                android:id="@+id/seven_pm"
+                android:textIsSelectable="true"
+                android:layout_marginLeft="30dp"
+                android:layout_width="80dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_calendar_button"
+                android:text="19:00"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/confirm"
+         android:background="@drawable/bg_calendar_button"
+        android:textColor="#FFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="24dp"
+        android:paddingHorizontal="20dp"
+        android:text="CONFIRM"/>
+
+</LinearLayout>
+</ScrollView>

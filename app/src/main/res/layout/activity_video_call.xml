@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/vidnewback"
+    android:layout_height="match_parent"
+    tools:context=".VideoCall">
+
+
+    <Button
+        android:id="@+id/button"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="167dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="313dp"
+        android:text="Button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="167dp"
+        android:layout_marginRight="156dp" />
+
+    <ImageView
+        android:id="@+id/dermatologycall"
+        android:layout_width="99dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="621dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="0dp"
+        app:srcCompat="@drawable/telephone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="210dp"
+        android:layout_marginRight="102dp" />
+
+    <ImageView
+        android:id="@+id/physiciancall"
+        android:layout_width="99dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="209dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="405dp"
+        app:srcCompat="@drawable/telephone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="209dp"
+        android:layout_marginRight="103dp" />
+
+    <ImageView
+        android:id="@+id/gyanecologycall"
+        android:layout_width="99dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="209dp"
+        android:layout_marginTop="431dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="190dp"
+        app:srcCompat="@drawable/telephone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="209dp"
+        android:layout_marginRight="103dp" />
+
+
+</RelativeLayout>

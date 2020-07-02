@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_user_profiles"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/ic_location"
+            android:title="Location" />
+        <item
+            android:id="@+id/nav_pay"
+            android:icon="@drawable/payment_icon"
+            android:title="Payments" />
+        <item
+            android:id="@+id/nav_record"
+            android:icon="@drawable/history"
+            android:title="Records" />
+        <item
+            android:id="@+id/nav_signout"
+            android:icon="@drawable/exit"
+            android:title="Sign Out" />
+    </group>
+</menu>

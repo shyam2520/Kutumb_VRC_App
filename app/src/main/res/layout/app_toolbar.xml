@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:elevation="0dp">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:elevation="0dp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:theme="@style/AppTheme.NoActionBar"
+        app:layout_anchor="@+id/appBarLayout"
+        app:layout_anchorGravity="center">
+
+        <RelativeLayout
+            android:elevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/HiText"
+                android:layout_width="30dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:fontFamily="@font/rubik"
+                android:text="Hi,"
+                android:textColor="#000000"
+                android:textSize="24dp"></TextView>
+
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/HiText"
+                android:layout_alignRight="@id/HiText"
+
+                android:layout_marginTop="-3dp"
+                android:fontFamily="@font/rubik"
+                android:text="#username"
+                android:textColor="#000000"
+                android:textSize="24dp"></TextView>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
